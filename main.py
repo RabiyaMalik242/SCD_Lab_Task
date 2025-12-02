@@ -1,12 +1,14 @@
 import pyodbc
+print("pyodbc installed")
 
 conn = pyodbc.connect(
-    r'DRIVER={ODBC Driver 18 for SQL Server};'
-    r'SERVER=DESKTOP-M2HN7DT\SQLEXPRESS;'
-    r'DATABASE=master;'
-    r'Trusted_Connection=yes;'
-    r'TrustServerCertificate=yes;'
+    "DRIVER={ODBC Driver 18 for SQL Server};"
+    "SERVER=DESKTOP-63LBVQG\\SQLEXPRESS;"
+    "DATABASE=master;"
+    "Trusted_Connection=yes;"
+    "TrustServerCertificate=yes;"
 )
+
 cursor =conn.cursor()
 print("Connected to sql server Successfully")
 
